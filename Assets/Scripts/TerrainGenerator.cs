@@ -23,6 +23,8 @@ public class TerrainGenerator : MonoBehaviour
 
         MeshDefine();
         MeshCreate();
+
+        GetComponent<MeshCollider>().sharedMesh = mesh;
     }
 
     private void MeshDefine()
